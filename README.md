@@ -1,6 +1,6 @@
 # app-vue-firebase
 
-This template should help get you started developing with Vue 3 in Vite.
+Vue Firebase Authentication es un proyecto que muestra cómo implementar la autenticación de usuarios en una aplicación Vue.js utilizando Firebase Authentication. Este proyecto proporciona ejemplos prácticos y guías paso a paso para configurar la autenticación de usuarios, incluyendo el registro de usuarios, inicio de sesión, cierre de sesión y protección de rutas privadas.
 
 ## Recommended IDE Setup
 
