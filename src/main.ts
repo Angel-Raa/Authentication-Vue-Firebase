@@ -1,7 +1,6 @@
 import './assets/main.css'
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app'
-import { getFirestore } from 'firebase/firestore'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
@@ -27,7 +26,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 initializeApp(firebaseConfig)
-const db = getFirestore()
+
 
 app.use(router)
 app.mount('#app')

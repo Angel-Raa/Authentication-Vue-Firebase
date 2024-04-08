@@ -57,7 +57,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts" setup >
 import { ref, type Ref } from 'vue'
 import { useAuthStore } from '@/stores/auth'
 import { useRouter } from 'vue-router'
@@ -69,6 +69,7 @@ const onSubmit = async () => {
   await store.login(email.value, password.value)
   router.push('/')
 }
+
+
 console.log('Login')
 </script>
-

@@ -12,7 +12,7 @@ export const useAuthStore = defineStore('auth', () => {
   const auth: Ref<Auth | null> = ref(getAuth())
   const user: Ref<UserCredential | null> = ref(null)
   const error: Ref<boolean | null> = ref(false)
-  
+
   const register = async (email: string, password: string): Promise<void> => {
     await createUserWithEmailAndPassword(auth.value!, email, password)
       .then((res) => (user.value = res))

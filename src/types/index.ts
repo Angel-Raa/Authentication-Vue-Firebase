@@ -13,3 +13,12 @@ export interface User {
   email: string
   
 }
+
+export interface Urls {
+  id?:{
+    name?:string
+    short?:string
+    user?:string
+  } 
+  
+}
