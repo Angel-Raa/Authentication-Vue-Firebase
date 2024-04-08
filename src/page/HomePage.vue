@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import CardComponents from '@/components/CardComponents.vue'
+import FormComponents from '@/components/FormComponents.vue'
+import LoadingComponents from '@/components/LoadingComponents.vue'
 import { useAuthStore } from '@/stores/auth'
 import { useDbStore } from '@/stores/db'
 import { onMounted } from 'vue'
@@ -15,7 +17,7 @@ const getData = async () => {
   await dbStore.getUrls()
 }
 
-onMounted( () => {
+onMounted(() => {
   getData()
 })
 </script>
@@ -39,9 +41,11 @@ onMounted( () => {
       </div>
     </div>
   </div>
-  <div v-if="dbStore.loading">
-    <p>Cargando.....</p>
-  </div>
+  <!-- Form -->
+  <FormComponents />
+  <!-- Loading-->
+  <LoadingComponents v-if="dbStore.loading" />
+  <!--Card -->
   <section v-else>
     <CardComponents
       v-for="(item, index) in dbStore.documents"
