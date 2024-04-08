@@ -44,7 +44,8 @@ onMounted(() => {
   <!-- Form -->
   <FormComponents />
   <!-- Loading-->
-  <LoadingComponents v-if="dbStore.loading" />
+  <LoadingComponents v-if="dbStore.loading"> Loading... </LoadingComponents>
+
   <!--Card -->
   <section v-else>
     <CardComponents
