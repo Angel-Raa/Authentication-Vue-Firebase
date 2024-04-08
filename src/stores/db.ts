@@ -16,7 +16,7 @@ export const useDbStore = defineStore('db', () => {
       const q = query(collection(db, 'urls'), where('users', '==', user?.uid))
       const querySnapshot = await getDocs(q)
       querySnapshot.forEach((doc) => {
-        documents.value = doc.data().urls
+        documents.value?.push(doc.data() as Urls)
         console.log(documents.value)
       })
     } catch (e: any) {

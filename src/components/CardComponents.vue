@@ -1,6 +1,6 @@
 <template>
   <section>
-    <p>{{ user ?? 'Usuario no especificado' }}</p>
+    <p>{{ user }}</p>
     <p>{{ short }}</p>
     <p>{{ name }}</p>
   </section>
@@ -9,12 +9,11 @@
 <script lang="ts" setup>
 import { defineProps } from 'vue'
 
-const props = defineProps<{
+defineProps<{
   name?: string
   short?: string
   user?: string
 }>()
-console.log(props.name)
 </script>
 
 <style></style>
