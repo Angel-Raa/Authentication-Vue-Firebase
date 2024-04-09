@@ -2,7 +2,6 @@
   <section>
     <p>{{ user }}</p>
     <p>{{ short }}</p>
-    <p>{{ name }}</p>
   </section>
 </template>
 

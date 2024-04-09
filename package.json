@@ -13,7 +13,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "check-valid-url": "^0.1.0",
     "firebase": "^10.10.0",
+    "nanoid": "^5.0.7",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
